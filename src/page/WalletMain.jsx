@@ -32,6 +32,7 @@ const WalletMain = () => {
       </div>
 
       <div className="app-nav">
+        <div className="background"></div>
         <img src={home} alt="" />
         <img src={transfers} alt="" />
         <img src={settgins} alt="" />
@@ -126,6 +127,62 @@ const WalletMain = () => {
               <div className="data">
                 <p className="count-money plus">+20,000 UAH</p>
                 <p className="time">28-10-24 09:15</p>
+              </div>
+            </li>
+
+            <li>
+              <div className="info-transfer">
+                <img src={uah} alt="" />
+                <div className="text-info">
+                  <h2>UAH</h2>
+                  <p>$0.024  <span>+1.2%</span></p>
+                </div>
+              </div>
+              <div className="data">
+                <p className="count-money minus">-14,734 UAH</p>
+                <p className="time">26-10-24 21:44</p>
+              </div>
+            </li>
+
+            <li>
+              <div className="info-transfer">
+                <img src={uah} alt="" />
+                <div className="text-info">
+                  <h2>UAH</h2>
+                  <p>$0.024  <span>+1.2%</span></p>
+                </div>
+              </div>
+              <div className="data">
+                <p className="count-money minus">-14,734 UAH</p>
+                <p className="time">26-10-24 21:44</p>
+              </div>
+            </li>
+
+            <li>
+              <div className="info-transfer">
+                <img src={uah} alt="" />
+                <div className="text-info">
+                  <h2>UAH</h2>
+                  <p>$0.024  <span>+1.2%</span></p>
+                </div>
+              </div>
+              <div className="data">
+                <p className="count-money minus">-14,734 UAH</p>
+                <p className="time">26-10-24 21:44</p>
+              </div>
+            </li>
+
+            <li>
+              <div className="info-transfer">
+                <img src={uah} alt="" />
+                <div className="text-info">
+                  <h2>UAH</h2>
+                  <p>$0.024  <span>+1.2%</span></p>
+                </div>
+              </div>
+              <div className="data">
+                <p className="count-money minus">-14,734 UAH</p>
+                <p className="time">26-10-24 21:44</p>
               </div>
             </li>
 

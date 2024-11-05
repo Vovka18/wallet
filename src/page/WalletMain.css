@@ -6,11 +6,19 @@
     background: #161616;
     font-family: "Roboto", sans-serif;
     color: #E6E0E9;
-    /* display: flex; */
+    position: relative;
+    overflow: scroll;
+    padding-bottom: 258px;
     /**/
     margin: 0px auto;
-    position: relative;
 }
+
+
+.body::-webkit-scrollbar{
+    width: 0px;
+    height: 0px;
+}
+
 
 .top-nav {
     width: 100%;
@@ -40,31 +48,34 @@
     justify-content: space-between;
 }
 
-.app-nav{
-    width: 100%;
+.app-nav {
+    width: inherit;
     height: 64px;
-    /* backdrop-filter: blur(36px); */
-    background: rgba(58, 83, 99, 0.3);
-    position: absolute;
+    position: fixed;
     top: 640px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     z-index: 2;
-    padding: 0px 50px;   
+    padding: 0px 50px;
 }
-.app-nav img{
+
+.app-nav .background {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background: rgba(58, 83, 99, 0.3);
+    backdrop-filter: blur(36px);
+}
+
+.app-nav img {
     width: 24px;
     height: 24px;
-    
+    z-index: 2;
+
 }
-
-
-
-
-
-
-
 
 main {
     width: 100%;
@@ -129,19 +140,21 @@ main .balance .control-balance button {
     justify-content: center;
     align-items: center;
 }
-main .balance .control-balance button p{
+
+main .balance .control-balance button p {
     margin-left: 4px;
 }
 
 
-main .transactions{
+main .transactions {
     width: 100%;
     background: rgba(230, 224, 233, 0.04);
     border: 1px solid #517886;
     border-radius: 15px;
     padding: 18px 12px;
 }
-main .transactions .info{
+
+main .transactions .info {
     width: 100%;
     height: 16px;
     margin-bottom: 12px;
@@ -150,15 +163,16 @@ main .transactions .info{
     font-weight: 500;
     font-size: 14px;
 }
-main .transactions .sort{
+
+main .transactions .sort {
     display: flex;
     justify-content: space-between;
 }
-main .transactions .sort p{
+
+main .transactions .sort p {
     margin-right: 6px;
 }
-
-main .transactions ul li{
+main .transactions ul li {
     height: 60px;
     display: flex;
     justify-content: space-between;
@@ -166,46 +180,57 @@ main .transactions ul li{
     border-bottom: 1px solid #517886;
     list-style-type: none;
 }
-main .transactions ul li .info-transfer{
+
+main .transactions ul li .info-transfer {
     width: 50%;
     display: flex;
     /* justify-content: space-between; */
     align-items: center;
 }
-main .transactions ul li .info-transfer .text-info{
+
+main .transactions ul li .info-transfer .text-info {
     margin-left: 12px;
 }
-main .transactions ul li .info-transfer .text-info h2{
+
+main .transactions ul li .info-transfer .text-info h2 {
     font-weight: 600;
     font-size: 18px;
 }
-main .transactions ul li .info-transfer .text-info p{
+
+main .transactions ul li .info-transfer .text-info p {
     font-weight: 400;
     font-size: 12px;
     color: rgba(230, 224, 233, 0.65);
 
 }
-main .transactions ul li .info-transfer .text-info p span{
+
+main .transactions ul li .info-transfer .text-info p span {
     color: #39bd46;
 }
 
-main .transactions ul li .data{
+main .transactions ul li .data {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
 }
-main .transactions ul li .data .count-money{
+
+main .transactions ul li .data .count-money {
     font-weight: 600;
     font-size: 14px;
 }
-.plus{
+
+.plus {
     color: #39bd46;
 }
-.minus{
+
+.minus {
     color: #FF3C38;
 }
-main .transactions ul li .data .time{
+
+main .transactions ul li .data .time {
     font-weight: 400;
     font-size: 12px;
     color: rgba(230, 224, 233, 0.65);
 }
+
+
